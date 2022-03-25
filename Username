@@ -1,0 +1,20 @@
+
+#!/usr/bind/sh
+
+user="Staff Finvh"
+while [ "$username" != "$user" ]
+do  
+  read -p "masukan username:-" username
+done
+echo "selamat datang di program sederhana"
+echo "1. install wget"
+echo "2. keluar"
+read -p "pilih (1/2)" pil
+if [ $pil "1" ]
+then
+  pkg install wget
+elif [ $pil "2" ]
+then
+  echo "keluar dari program"
+else
+  echo "input salah"
